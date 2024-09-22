@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            
+            <h1>Music</h1>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Add New Song</h2>
+                <form id="song-form">
+                    <div class="input-group">
+                        <label for="title">Song Title:</label>
+                        <input type="text" id="title" required placeholder="Enter song title">
+                        <br>
+                    </div>
+                    <div class="input-group">
+                        <label for="artist">Artist Name:</label>
+                        <input type="text" id="artist" required placeholder="Enter artist name">
+                        <br>
+                    </div>
+                    <br>
+                    <button type="submit">Add Song</button>
+                    <p id="error-message"></p>
+                </form>
+            </section>
+            <section class="list-section">
+                <h2>Your Songs</h2>
+                <ul id="song-list"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>Designed by Aashutosh Rimal</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
